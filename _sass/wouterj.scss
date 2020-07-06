@@ -80,6 +80,9 @@
 }
     .chart{
         min-width:0px;
+        background:white;
+        position:relative;
+        padding-bottom:2.5em;
     }
         .chart__hero{
             max-width:100%;
@@ -89,6 +92,11 @@
             font-weight:400;
             text-align:center;
             text-transform:uppercase;
+
+            width:100%;
+
+            position:absolute;
+            bottom:0;
         }
 
 .one-sixth    { grid-column:span 1; }
@@ -97,3 +105,11 @@
 .two-thirds   { grid-column:span 4; }
 .five-sixths  { grid-column:span 5; }
 .one-whole    { grid-column:span 6; }
+
+.post {
+    grid-column:span 6;
+
+    img{
+        max-width:100%;
+    }
+}

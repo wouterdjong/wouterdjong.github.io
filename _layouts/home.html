@@ -3,16 +3,10 @@ layout: default
 
 ---
 {% for post in site.posts %}
-<article class="chart  chart--post one-whole">
-    <img class="chart__hero" src="http://placehold.it/1500x500">
+<!--<a href="{{ post.url }}">-->
+<article class="chart  chart--post {{ post.size }}">
+    <img class="chart__hero" src="{{ post.hero }}">
     <h1 class="chart__label">{{ post.title }}</h1>
 </article>
+<!--</a>-->
 {% endfor %}
-<article class="chart  chart--post two-thirds">
-    <img class="chart__hero" src="http://placehold.it/1000x500">
-    <h1 class="chart__label">Foobar</h1>
-</article>
-<article class="chart  chart--post one-third">
-    <img class="chart__hero" src="http://placehold.it/500x500">
-    <h1 class="chart__label">Title</h1>
-</article>
