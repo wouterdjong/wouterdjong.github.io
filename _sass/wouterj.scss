@@ -1,0 +1,99 @@
+.page{
+    background:#fcfcfc;
+    padding:2rem;
+
+    font-family:'IBM Plex Serif', Georgia, serif;
+    font-size:15pt;
+    color:#4d4d4d;
+}
+
+
+.page__header{
+    height:130px;
+
+    display:grid;
+    grid-template-columns:1fr 10rem;
+
+    font-family:'IBM Plex Sans Condensed', sans-serif;
+}
+    .page__headline{
+        margin:0;
+
+        font-weight:300;
+        font-size:3.5rem;
+        line-height:130px;
+        letter-spacing:0;
+
+        a{
+            font-style:normal;
+            color:inherit;
+            text-transform:uppercase;
+            text-decoration:underline;
+            text-decoration-style:dotted;
+
+            transition:color .2s ease-in;
+
+            &:hover{
+                color:#000000;
+            }
+        }
+    }
+
+    .page__nav{
+        ul{
+            height:100%;
+            padding:0;
+            margin:0;
+
+            display:flex;
+            align-items:center;
+            justify-content:end;
+        }
+            li {
+                float:left;
+                margin:0 1rem;
+
+                list-style:none;
+            }
+
+        a{
+            text-decoration:none;
+            color:inherit;
+
+            transition:color .2s ease-in;
+
+            &:hover{
+                text-decoration:underline;
+                color:#000000;
+            }
+        }
+    }
+
+.page__body{
+    width:80%;
+    max-width:1200px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-gap:1rem;
+}
+    .chart{
+        min-width:0px;
+    }
+        .chart__hero{
+            max-width:100%;
+        }
+        .chart__label{
+            font-size:1.2rem;
+            font-weight:400;
+            text-align:center;
+            text-transform:uppercase;
+        }
+
+.one-sixth    { grid-column:span 1; }
+.one-third    { grid-column:span 2; }
+.three-sixths { grid-column:span 3; }
+.two-thirds   { grid-column:span 4; }
+.five-sixths  { grid-column:span 5; }
+.one-whole    { grid-column:span 6; }

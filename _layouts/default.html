@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+
+  {%- include head.html -%}
+
+  <body class="page  {% if layout.type %}page--{{ layout.type }}{% endif %}" itemscope itemtype="http://schema.org/WebPage">
+
+    {%- include header.html -%}
+
+    <main class=page__body itemscope itemtype="http://schema.org/Blog">
+        {{ content }}
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
